@@ -23,14 +23,6 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 /*
  * A better looking default horizontal rule
  */
@@ -302,6 +294,10 @@ body {
   background-color: #e1e1e1;
   font-size: 15px;
 }
+header {
+  background-color: #ffffff;
+  z-index: 103;
+}
 header #header-cv {
   padding-top: 10px;
 }
@@ -446,7 +442,7 @@ div.hr {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  background-color: #666666;
+  background-color: #ffffff;
   max-width: 1600px;
 }
 @media only screen and (min-width: 1600px) {
@@ -496,10 +492,7 @@ div.hr {
 }
 @media only screen and (max-width: 767px) {
   .portfolio-piece .portfolio-imagery {
-    height: 200px;
-  }
-  .portfolio-piece:hover .portfolio-imagery {
-    opacity: 0.7;
+    height: 275px;
   }
   .portfolio-piece .portfolio-text-block-mobile {
     display: block !important;
@@ -554,15 +547,49 @@ div.hr {
   top: 15px;
   transition: top 0.5s;
 }
+.portfolio-piece .portfolio-text-block .close-button {
+  display: none;
+  position: absolute;
+  right: 28px;
+  top: 32px;
+  background-image: url('/v2/img/portfolio-close.png');
+  width: 30px;
+  height: 30px;
+}
+.portfolio-piece .portfolio-text-block.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0px;
+  color: #ffffff;
+}
+.portfolio-piece .portfolio-text-block.active .copy {
+  top: 0px;
+  transition: top 0.5s;
+  transition-delay: 0.25s;
+}
+.portfolio-piece .portfolio-text-block.active .close-button {
+  display: block;
+}
 .portfolio-piece .portfolio-text-block-mobile {
   display: none;
   background-color: #26c7d1;
   height: 75px;
   font-size: 16px;
   padding-left: 30px;
-  position: relative;
+  position: absolute;
+  top: 200px;
   text-decoration: none;
   color: #000;
+  width: 100%;
+}
+.portfolio-piece .portfolio-text-block-mobile.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+.portfolio-piece .portfolio-text-block-mobile.active .arrow {
+  display: none;
+}
+.portfolio-piece .portfolio-text-block-mobile.active .close-button {
+  display: block;
 }
 .portfolio-piece .portfolio-text-block-mobile .heading {
   padding-top: 14px;
@@ -576,6 +603,15 @@ div.hr {
   background-image: url('/v2/img/portfolio-arrow.png');
   width: 18px;
   height: 36px;
+}
+.portfolio-piece .portfolio-text-block-mobile .close-button {
+  display: none;
+  position: absolute;
+  right: 28px;
+  top: 23px;
+  background-image: url('/v2/img/portfolio-close.png');
+  width: 30px;
+  height: 30px;
 }
 .container #content {
   text-align: center;
@@ -671,5 +707,83 @@ h2 {
   width: 70px;
   height: 60px;
   padding-left: 10px;
+}
+/* TFL */
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  #tfl-blurb {
+    font-size: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .grey {
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #tfl-blurb {
+    font-size: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .grey {
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+#tfl-blurb {
+  color: #ffffff;
+  background-color: #01009a;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.grey {
+  background-color: #e4e4e4;
+  padding-top: 30px;
+}
+.grey p {
+  margin-top: 20px;
+}
+.carousel-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.carousel-container .ipad-frame {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio-controls > a {
+  color: #000000;
+  display: block;
+  height: 60px;
+  background-color: #26c7d1;
+  padding-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+}
+.portfolio-controls > a:hover {
+  background-color: #2ae1ec;
+}
+.portfolio-controls .arrow-fwd {
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  background-image: url('/v2/img/menu-arrow2.png');
+  width: 15px;
+  height: 27px;
+  z-index: 101;
+}
+.portfolio-controls .arrow-bck {
+  position: absolute;
+  left: 28px;
+  top: 18px;
+  background-image: url('/v2/img/menu-arrow3.png');
+  width: 15px;
+  height: 27px;
+  z-index: 101;
 }
 /*# sourceMappingURL=main.css.map */

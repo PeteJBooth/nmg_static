@@ -15,6 +15,11 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="js/vendor/owl-carousel/owl.carousel.css">
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="js/vendor/owl-carousel/owl.theme.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -65,7 +70,7 @@
           </header>
          
   	    </div> <!-- /container -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="about">
           <div class="row">
             <div class="col-xs-12 col-sm-5 col-md-4">
               <h2 class="text-center">Hello.</h2>
@@ -106,66 +111,97 @@
             </div>
           </div>
         </div>
-        <article class="container-fluid-full-width portfolio-piece">
-          <a href="" class="portfolio-imagery" style="background-image:url('img/portfolio/tfl.jpg')"></a>
-           <a href="" class="portfolio-text-block">
-            <p class="heading">TFL</p>
-            <p class="copy">eIRF Report</p>
-          </a>
-          <a href="" class="portfolio-text-block-mobile">
-            <p class="heading">TFL</p>
-            <p class="copy">eIRF Report</p>
-            <div class="arrow"></div>
-          </a>
-        </article>
-       <article class="container-fluid-full-width portfolio-piece">
-          <a href="" class="portfolio-imagery" style="background-image:url('img/portfolio/westminsterabbey.jpg')"></a>
-           <a href="" class="portfolio-text-block">
-            <p class="heading">Westminster Abbey</p>
-            <p class="copy">Responsive Website &amp; App</p>
-          </a>
-          <a href="" class="portfolio-text-block-mobile">
-            <p class="heading">Westminster Abbey</p>
-            <p class="copy">Responsive Website &amp; App</p>
-            <div class="arrow"></div>
-          </a>
-        </article>
-        <article class="container-fluid-full-width portfolio-piece">
-          <a href="" class="portfolio-imagery" style="background-image:url('img/portfolio/bp.jpg')"></a>
-          <a href="" class="portfolio-text-block">
-            <p class="heading">BP</p>
-            <p class="copy">QR Code App</p>
-          </a>
-          <a href="" class="portfolio-text-block-mobile">
-            <p class="heading">BP</p>
-            <p class="copy">QR Code App</p>
-            <div class="arrow"></div>
-          </a>
-        </article>
-        <article class="container-fluid-full-width portfolio-piece">
-          <a href="" class="portfolio-imagery" style="background-image:url('img/portfolio/fany.jpg')"></a>
-          <a href="" class="portfolio-text-block">
-            <p class="heading">F.A.N.Y (coming soon)</p>
-            <p class="copy">Responsive Website</p>
-          </a>
-          <a href="" class="portfolio-text-block-mobile">
-            <p class="heading">F.A.N.Y (coming soon)</p>
-            <p class="copy">Responsive Website</p>
-            <div class="arrow"></div>
-          </a>
-        </article>
-        <article class="container-fluid-full-width portfolio-piece">
-          <a href="" class="portfolio-imagery" style="background-image:url('img/portfolio/planz.jpg')"></a>
-          <a href="" class="portfolio-text-block">
-            <p class="heading">Plan ZHeroes</p>
-            <p class="copy">Responsive Website</p>
-          </a>
-          <a href="" class="portfolio-text-block-mobile">
-            <p class="heading">Plan ZHeroes</p>
-            <p class="copy">Responsive Website</p>
-            <div class="arrow"></div>
-          </a>
-        </article>
+
+        <div class="container-fluid-full-width portfolio-container">
+          <div class="portfolio-piece">
+            <a href="portfolio/tfl" class="ajaxy portfolio-imagery responsive-image" data-default="url('img/portfolio/tfl.jpg')" data-large="url('img/portfolio/tfl-lg.jpg')"></a>
+             <a href="portfolio/tfl" class="ajaxy portfolio-text-block">
+              <p class="heading">TFL</p>
+              <p class="copy">eIRF Report</p>
+              <div class="close-button"></div>
+            </a>
+            <a href="portfolio/tfl" class="ajaxy portfolio-text-block-mobile">
+              <p class="heading">TFL</p>
+              <p class="copy">eIRF Report</p>
+              <div class="arrow"></div>
+              <div class="close-button"></div>
+            </a>
+          </div>
+          <article class="content container-fluid"></article>
+        </div>
+
+
+       <div class="container-fluid-full-width portfolio-container">
+          <div class="portfolio-piece">
+            <a href="portfolio/westminster-abbey" class="ajaxy portfolio-imagery responsive-image" data-default="url('img/portfolio/westminsterabbey.jpg')" data-large="url('img/portfolio/westminsterabbey-lg.jpg')"></a>
+             <a href="portfolio/westminster-abbey" class="ajaxy portfolio-text-block">
+              <p class="heading">Westminster Abbey</p>
+              <p class="copy">Responsive Website &amp; App</p>
+              <div class="close-button"></div>
+            </a>
+            <a href="portfolio/westminster-abbey" class="ajaxy portfolio-text-block-mobile">
+              <p class="heading">Westminster Abbey</p>
+              <p class="copy">Responsive Website &amp; App</p>
+              <div class="arrow"></div>
+              <div class="close-button"></div>
+            </a>
+          </div>
+          <article class="content"></article>
+        </div>
+
+        <div class="container-fluid-full-width portfolio-container">
+          <div class="portfolio-piece">
+            <a href="portfolio/bp" class="ajaxy portfolio-imagery responsive-image" data-default="url('img/portfolio/bp.jpg')" data-large="url('img/portfolio/bp-lg.jpg')"></a>
+            <a href="portfolio/bp" class="ajaxy portfolio-text-block">
+              <p class="heading">BP</p>
+              <p class="copy">QR Code App</p>
+              <div class="close-button"></div>
+            </a>
+            <a href="portfolio/bp" class="ajaxy portfolio-text-block-mobile">
+              <p class="heading">BP</p>
+              <p class="copy">QR Code App</p>
+              <div class="arrow"></div>
+              <div class="close-button"></div>
+            </a>
+          </div>
+          <article class="content"></article>
+        </div>
+
+        <div class="container-fluid-full-width portfolio-container">
+          <div class="portfolio-piece">
+            <a href="portfolio/fany" class="ajaxy portfolio-imagery responsive-image" data-default="url('img/portfolio/fany.jpg')" data-large="url('img/portfolio/fany-lg.jpg')"></a>
+            <a href="portfolio/fany" class="ajaxy portfolio-text-block">
+              <p class="heading">F.A.N.Y (coming soon)</p>
+              <p class="copy">Responsive Website</p>
+              <div class="close-button"></div>
+            </a>
+            <a href="portfolio/fany" class="ajaxy portfolio-text-block-mobile">
+              <p class="heading">F.A.N.Y (coming soon)</p>
+              <p class="copy">Responsive Website</p>
+              <div class="arrow"></div>
+              <div class="close-button"></div>
+            </a>
+          </div>
+          <article class="content"></article>
+        </div>
+
+        <div class="container-fluid-full-width portfolio-container">
+          <div class="portfolio-piece">
+            <a href="portfolio/plan-z" class="ajaxy portfolio-imagery responsive-image" data-default="url('img/portfolio/planz.jpg')" data-large="url('img/portfolio/planz-lg.jpg')"></a>
+            <a href="portfolio/plan-z" class="ajaxy portfolio-text-block">
+              <p class="heading">Plan ZHeroes</p>
+              <p class="copy">Responsive Website</p>
+              <div class="close-button"></div>
+            </a>
+            <a href="portfolio/plan-z" class="ajaxy portfolio-text-block-mobile">
+              <p class="heading">Plan ZHeroes</p>
+              <p class="copy">Responsive Website</p>
+              <div class="arrow"></div>
+              <div class="close-button"></div>
+            </a>
+          </div>
+          <article class="content"></article>
+        </div>
 
         <div id="footer" class="container-fluid-full-width">
             <div>
@@ -185,6 +221,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/owl-carousel/owl.carousel.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
