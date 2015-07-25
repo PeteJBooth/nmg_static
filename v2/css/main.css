@@ -300,6 +300,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e1e1e1;
+  font-size: 15px;
 }
 header #header-cv {
   padding-top: 10px;
@@ -338,7 +339,7 @@ header #nav-mobile > div .arrow {
   position: absolute;
   right: 28px;
   top: 18px;
-  background-image: url('/v2/img/menu-arrow.png');
+  background-image: url('/v2/img/menu-arrow2.png');
   width: 15px;
   height: 27px;
   z-index: 101;
@@ -448,6 +449,134 @@ div.hr {
   background-color: #666666;
   max-width: 1600px;
 }
+@media only screen and (min-width: 1600px) {
+  div.hr {
+    margin-left: 125px;
+    margin-right: 125px;
+  }
+  .row {
+    padding: 0 125px;
+  }
+  #client-row.row {
+    padding: 0;
+  }
+}
+.small-cv {
+  padding-top: 20px;
+}
+.big-cv {
+  padding: 30px 0 30px 0;
+}
+.portfolio-piece {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-piece:hover .portfolio-text-block-mobile {
+  background-color: #2ae1ec;
+}
+.portfolio-piece:hover .portfolio-text-block {
+  bottom: 0px;
+  background-color: #26c7d1;
+  color: #000000;
+  transition: bottom 0.5s, color 0.5s, background-color 0.5s;
+}
+.portfolio-piece:hover .portfolio-text-block .copy {
+  top: 0px;
+  transition: top 0.5s;
+  transition-delay: 0.25s;
+}
+.portfolio-piece .portfolio-imagery {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .portfolio-piece .portfolio-imagery {
+    height: 200px;
+  }
+  .portfolio-piece:hover .portfolio-imagery {
+    opacity: 0.7;
+  }
+  .portfolio-piece .portfolio-text-block-mobile {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .portfolio-piece .portfolio-imagery {
+    height: 390px;
+  }
+  .portfolio-piece .portfolio-text-block {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  .portfolio-piece .portfolio-imagery {
+    height: 520px;
+  }
+  .portfolio-piece .portfolio-text-block {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .portfolio-piece .portfolio-imagery {
+    height: 815px;
+  }
+  .portfolio-piece .portfolio-text-block {
+    display: block !important;
+  }
+}
+.portfolio-piece .portfolio-text-block {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90px;
+  font-size: 20px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: -33px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  transition: bottom 0.5s, color 0.5s, background-color 0.5s;
+  transition-delay: 0.25s;
+}
+.portfolio-piece .portfolio-text-block .heading {
+  padding-top: 16px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.portfolio-piece .portfolio-text-block .copy {
+  position: relative;
+  top: 15px;
+  transition: top 0.5s;
+}
+.portfolio-piece .portfolio-text-block-mobile {
+  display: none;
+  background-color: #26c7d1;
+  height: 75px;
+  font-size: 16px;
+  padding-left: 30px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+.portfolio-piece .portfolio-text-block-mobile .heading {
+  padding-top: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.portfolio-piece .portfolio-text-block-mobile .arrow {
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  background-image: url('/v2/img/portfolio-arrow.png');
+  width: 18px;
+  height: 36px;
+}
 .container #content {
   text-align: center;
   padding-bottom: 2em;
@@ -500,5 +629,47 @@ h2 {
   border-right: 10px solid #ffffff;
   border-bottom: 10px solid #26c7d1;
   border-top: none;
+}
+#footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+#footer .footer-heading {
+  font-size: 20px;
+}
+#footer .footer-copy {
+  font-size: 14px;
+}
+#footer a.block-link {
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#footer .mail-icon {
+  background-image: url('/v2/img/main-icon.png');
+  width: 70px;
+  height: 60px;
+  padding-right: 10px;
+}
+#footer .mail-link {
+  color: #28c6d1;
+  display: inline-block;
+  height: 20px;
+  padding: 20px 20px 0 0;
+  vertical-align: top;
+}
+#footer .social-tw {
+  background-image: url('/v2/img/social-tw.png');
+  width: 70px;
+  height: 60px;
+  padding-right: 10px;
+}
+#footer .social-li {
+  background-image: url('/v2/img/social-li.png');
+  background-position: right;
+  border-left: 1px solid #717171;
+  width: 70px;
+  height: 60px;
+  padding-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
