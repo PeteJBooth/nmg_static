@@ -12,6 +12,10 @@
 @import (reference) "bootstrap-3.3.5/less/mixins/grid.less";
 @import (reference) "bootstrap-3.3.5/less/mixins/center-block.less";
 
+@import "carousel.less";
+
+
+
 html,
 button,
 input,
@@ -875,17 +879,7 @@ h2 {
   }
 }
 
-.carousel-container {
-  padding-top:20px;
-  padding-bottom:20px;
 
-  .ipad-frame{
-    position: relative;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
 
 .portfolio-controls {
   &>a{
@@ -920,36 +914,4 @@ h2 {
       height: 27px;
       z-index: 101;
     }
-}
-
-.carousel-frame {
-  height: 888px;
-  overflow: hidden;
-  position: relative;
-  width: 1105px;
-  z-index: 101;
-
-  & > img {
-    position: absolute;
-    top: 0px;
-  }
-
-  .owl-carousel{
-    .center-block();
-    width: 915px;
-    z-index: 1;
-
-    .owl-controls{
-      .center-block();
-      margin-top: 180px;
-    }    
-  }
-
-  .owl-wrapper-outer {
-    height: 690px;
-    width: 915px !important;
-    position: relative;
-    overflow: hidden;
-    top: 86px;
-  }
 }
