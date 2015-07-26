@@ -119,7 +119,7 @@ a.ajaxy.deactivated {
   position: absolute;
   right: 28px;
   top: 18px;
-  background-image: url('/v2/img/menu-arrow2.png');
+  background-image: url('/img/menu-arrow2.png');
   width: 15px;
   height: 27px;
   z-index: 101;
@@ -128,7 +128,7 @@ a.ajaxy.deactivated {
   position: absolute;
   left: 28px;
   top: 18px;
-  background-image: url('/v2/img/menu-arrow3.png');
+  background-image: url('/img/menu-arrow3.png');
   width: 15px;
   height: 27px;
   z-index: 101;

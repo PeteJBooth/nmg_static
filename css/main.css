@@ -299,7 +299,7 @@ a.ajaxy.deactivated {
   position: absolute;
   right: 28px;
   top: 18px;
-  background-image: url('/v2/img/menu-arrow2.png');
+  background-image: url('/img/menu-arrow2.png');
   width: 15px;
   height: 27px;
   z-index: 101;
@@ -308,7 +308,7 @@ a.ajaxy.deactivated {
   position: absolute;
   left: 28px;
   top: 18px;
-  background-image: url('/v2/img/menu-arrow3.png');
+  background-image: url('/img/menu-arrow3.png');
   width: 15px;
   height: 27px;
   z-index: 101;
@@ -641,7 +641,7 @@ header #nav-mobile > div .arrow {
   position: absolute;
   right: 28px;
   top: 18px;
-  background-image: url('/v2/img/menu-arrow2.png');
+  background-image: url('/img/menu-arrow2.png');
   width: 15px;
   height: 27px;
   z-index: 101;
@@ -856,7 +856,7 @@ div.hr {
   position: absolute;
   right: 28px;
   top: 32px;
-  background-image: url('/v2/img/portfolio-close.png');
+  background-image: url('/img/portfolio-close.png');
   width: 30px;
   height: 30px;
 }
@@ -904,7 +904,7 @@ div.hr {
   position: absolute;
   right: 28px;
   top: 18px;
-  background-image: url('/v2/img/portfolio-arrow.png');
+  background-image: url('/img/portfolio-arrow.png');
   width: 18px;
   height: 36px;
 }
@@ -913,7 +913,7 @@ div.hr {
   position: absolute;
   right: 28px;
   top: 23px;
-  background-image: url('/v2/img/portfolio-close.png');
+  background-image: url('/img/portfolio-close.png');
   width: 30px;
   height: 30px;
 }
@@ -986,7 +986,7 @@ h2 {
   display: inline-block;
 }
 #contact .mail-icon {
-  background-image: url('/v2/img/main-icon.png');
+  background-image: url('/img/main-icon.png');
   width: 70px;
   height: 60px;
   padding-right: 10px;
@@ -999,13 +999,13 @@ h2 {
   vertical-align: top;
 }
 #contact .social-tw {
-  background-image: url('/v2/img/social-tw.png');
+  background-image: url('/img/social-tw.png');
   width: 70px;
   height: 60px;
   padding-right: 10px;
 }
 #contact .social-li {
-  background-image: url('/v2/img/social-li.png');
+  background-image: url('/img/social-li.png');
   background-position: right;
   border-left: 1px solid #717171;
   width: 70px;
