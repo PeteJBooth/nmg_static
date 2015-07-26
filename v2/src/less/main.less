@@ -13,8 +13,7 @@
 @import (reference) "bootstrap-3.3.5/less/mixins/center-block.less";
 
 @import "carousel.less";
-
-
+@import "portfolio.less";
 
 html,
 button,
@@ -535,9 +534,6 @@ div.hr {
     margin-left: 125px;
     margin-right: 125px;
   }
-  .row {
-    padding: 0 125px;
-  }
   #client-row.row {
     padding: 0;
   }
@@ -837,81 +833,3 @@ h2 {
   }
 }
 
-/* TFL */
-
-@media only screen and (min-width: 1024px) and (max-width: 1599px){
-  #tfl-blurb {
-    font-size: 25px;
-    padding-left: 200px;
-    padding-right:200px;
-  }
-  .grey {
-    font-size: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  #tfl-blurb {
-    font-size: 30px;
-    padding-left: 200px;
-    padding-right:200px;
-  }
-  .grey {
-    font-size: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
-
-#tfl-blurb {
-  color: #ffffff;
-  background-color: #01009a;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.grey {
-  background-color: #e4e4e4;
-  padding-top: 30px;
-
-  p {
-    margin-top:20px;
-  }
-}
-
-
-
-.portfolio-controls {
-  &>a{
-    color: #000000;
-    display: block;
-    height:60px;
-    background-color: #26c7d1;
-    padding-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-bottom: 1px solid #ffffff;
-
-    &:hover{
-      background-color: #2ae1ec;
-    }
-  }
-  .arrow-fwd {
-      position:absolute;
-      right:28px;
-      top:18px;
-      background-image: url('/v2/img/menu-arrow2.png');
-      width: 15px;
-      height: 27px;
-      z-index: 101;
-    }
-    .arrow-bck {
-      position:absolute;
-      left:28px;
-      top:18px;
-      background-image: url('/v2/img/menu-arrow3.png');
-      width: 15px;
-      height: 27px;
-      z-index: 101;
-    }
-}

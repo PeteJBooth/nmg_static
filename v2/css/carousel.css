@@ -1,0 +1,169 @@
+.carousel-container .carousel-frame {
+  overflow: hidden;
+  position: relative;
+  z-index: 101;
+}
+.carousel-container .carousel-frame > img {
+  position: absolute;
+  top: 0px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.carousel-container .carousel-frame .owl-carousel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.carousel-container .carousel-frame .owl-carousel .owl-controls {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page span {
+  background-color: #29c7d2;
+}
+.carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page.active span {
+  background-color: #cccccc;
+}
+.carousel-container .carousel-frame .owl-wrapper-outer {
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1280px) {
+  .carousel-container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .carousel-container .carousel-frame {
+    height: 975px;
+    width: 1105px;
+  }
+  .carousel-container .carousel-frame .owl-carousel {
+    width: 915px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls {
+    margin-top: 210px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page span {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .carousel-container .carousel-frame .owl-wrapper-outer {
+    height: 690px;
+    width: 915px !important;
+    top: 86px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+  .carousel-container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .carousel-container .carousel-frame {
+    height: 730px;
+    width: 845px;
+  }
+  .carousel-container .carousel-frame .owl-carousel {
+    width: 699px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls {
+    margin-top: 140px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page span {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .carousel-container .carousel-frame .owl-wrapper-outer {
+    height: 536px;
+    width: 699px !important;
+    top: 65px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .carousel-container .carousel-frame {
+    height: 610px;
+    width: 690px;
+  }
+  .carousel-container .carousel-frame .owl-carousel {
+    width: 570px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls {
+    margin-top: 140px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page span {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .carousel-container .carousel-frame .owl-wrapper-outer {
+    height: 421px;
+    width: 561px !important;
+    top: 53px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .carousel-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .carousel-container .carousel-frame {
+    height: 390px;
+    width: 420px;
+  }
+  .carousel-container .carousel-frame .owl-carousel {
+    width: 348px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls {
+    margin-top: 90px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page span {
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .carousel-container .carousel-frame .owl-wrapper-outer {
+    height: 258px;
+    width: 349px !important;
+    top: 32px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .carousel-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .carousel-container .carousel-frame {
+    height: 265px;
+    width: 265px;
+  }
+  .carousel-container .carousel-frame .owl-carousel {
+    width: 219px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls {
+    margin-top: 60px;
+  }
+  .carousel-container .carousel-frame .owl-carousel .owl-controls .owl-page span {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .carousel-container .carousel-frame .owl-wrapper-outer {
+    height: 162px;
+    width: 219px !important;
+    top: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
