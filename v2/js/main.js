@@ -33,7 +33,6 @@ $(document).ready(function(){
 	// main menu items
 	$('.scroll-link').click(function(e){
 		e.preventDefault();
-		e.stopPropagation();
 		$this = $(this);
 		$target = $($this.attr('href'));
 
@@ -66,7 +65,6 @@ $(document).ready(function(){
 
 	function open_portfolio(e){
 		e.preventDefault();
-		e.stopPropagation();
 
 		var $article_container = $(this).parents('.portfolio-container');
 		var $about_container = $('#about');
@@ -87,7 +85,11 @@ $(document).ready(function(){
 			$('.portfolio-container').not($article_container).slideUp(500);
 			$article_container.find('.content').slideDown(500);
 			
-			$("#i-carousel").owlCarousel({
+			$(".carousel-tfl").owlCarousel({
+				singleItem:true,
+				responsive:true
+			});
+			$(".carousel-wa").owlCarousel({
 				singleItem:true,
 				responsive:true
 			});
@@ -97,7 +99,6 @@ $(document).ready(function(){
 			$('a.ajaxy').addClass('deactivated');
 			$('a.ajaxy').unbind().click(function(e){
 				e.preventDefault();
-				e.stopPropagation();
 				return false;
 			});
 		});
@@ -105,7 +106,6 @@ $(document).ready(function(){
 
 	function _scroll_up_and_close(e){
 		e.preventDefault();
-		e.stopPropagation();
 		var $article_container = $(this).parents('.portfolio-container');
 		
 		$("html, body").animate({ scrollTop: $article_container.position().top + "px" }, 1000, function(){
