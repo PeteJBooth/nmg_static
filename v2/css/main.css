@@ -786,4 +786,35 @@ h2 {
   height: 27px;
   z-index: 101;
 }
+.carousel-frame {
+  height: 888px;
+  overflow: hidden;
+  position: relative;
+  width: 1105px;
+  z-index: 101;
+}
+.carousel-frame > img {
+  position: absolute;
+  top: 0px;
+}
+.carousel-frame .owl-carousel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 915px;
+  z-index: 1;
+}
+.carousel-frame .owl-carousel .owl-controls {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
+}
+.carousel-frame .owl-wrapper-outer {
+  height: 690px;
+  width: 915px !important;
+  position: relative;
+  overflow: hidden;
+  top: 86px;
+}
 /*# sourceMappingURL=main.css.map */
